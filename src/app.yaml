@@ -14,5 +14,9 @@ handlers:
     static_dir: src/public/js
   - url: /stylsheets
     static_dir: src/public/stylesheets
+  - url: /(.*\.(gif|png|jpg))$
+    static_files: src/public/images/\1
+    upload: src/public/images/.*\.(gif|png|jpg)$
+
 
 
