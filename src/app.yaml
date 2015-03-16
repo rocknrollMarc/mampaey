@@ -1,0 +1,18 @@
+application: mampaey-bar-training
+version: alpha-0.0.1
+runtime: go
+api_version: go1
+
+handlers:
+  - url: /.*
+    script: _go_app
+  - url: /font
+    static_dir: src/public/font
+  - url: /images
+    static_dir: src/public/images
+  - url: /js
+    static_dir: src/public/js
+  - url: /stylsheets
+    static_dir: src/public/stylesheets
+
+
